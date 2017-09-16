@@ -1,0 +1,7 @@
+syn keyword muttrcColorField skipwhite contained XXX...
+
+header
+security_both
+security_encrypt
+security_none
+security_sign

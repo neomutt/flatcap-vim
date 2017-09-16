@@ -1,0 +1,31 @@
+syntax keyword
+	contained
+	skipwhite
+	QWQ
+	nextgroup
+syntax match
+	contained
+	skipwhite
+	skipnl
+	QWQ
+	contains=
+	nextgroup=
+syntax region
+	contained
+	skipwhite
+	keepend
+	start=QWQ
+	skip=QWQ
+	end=QWQ
+	matchgroup=
+	contains=
+	nextgroup=
+
+what about
+	:help syn-pattern-offset
+	ms=
+	me=
+	re=
+	hs=
+	lc=
+

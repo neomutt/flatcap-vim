@@ -1,0 +1,179 @@
+digraph nextgroup {
+	graph [
+		rankdir="LR"
+		nodesep="0.5"
+		ranksep="0.3"
+	];
+
+	node [
+		shape="Mrecord"
+		style="filled"
+		height="0.2"
+		penwidth="2.0"
+		color="blue"
+		fontcolor="black"
+		fontsize="18"
+	];
+
+	edge [
+		penwidth="1.5"
+		color="#000000"
+		arrowsize="1.0"
+	];
+
+	muttrcAction                   -> muttrcBadAction
+	muttrcAction                   -> muttrcFunction
+	muttrcAction                   -> muttrcKeyName
+	muttrcAddrContent              -> muttrcEmail
+	muttrcAliasEmail               -> muttrcEmail
+	muttrcAliasEncEmail            -> muttrcEmail
+	muttrcAliasFormatStr           -> muttrcAliasFormatEscapes
+	muttrcAliasFormatStr           -> muttrcFormatErrors
+	muttrcAliasGroupDef            -> muttrcGroupFlag
+	muttrcAlternatesLine           -> muttrcAlternateKeyword
+	muttrcAlternatesLine           -> muttrcComment
+	muttrcAlternatesLine           -> muttrcGroupDef
+	muttrcAlternatesLine           -> muttrcRXPat
+	muttrcAlternatesLine           -> muttrcUnHighlightSpace
+	muttrcAttachFormatStr          -> muttrcAttachFormatConditionals
+	muttrcAttachFormatStr          -> muttrcAttachFormatEscapes
+	muttrcAttachFormatStr          -> muttrcFormatErrors
+	muttrcBadAction                -> muttrcEmail
+	muttrcBindFunction             -> muttrcFunction
+	muttrcBindKey                  -> muttrcKey
+	muttrcBindMenuList             -> muttrcMenu
+	muttrcBindMenuList             -> muttrcMenuCommas
+	muttrcColorBG                  -> muttrcColor
+	muttrcColorBG                  -> muttrcUnHighlightSpace
+	muttrcColorBG                  -> muttrcVariable
+	muttrcColorBGH                 -> muttrcColor
+	muttrcColorBGH                 -> muttrcUnHighlightSpace
+	muttrcColorBGH                 -> muttrcVariable
+	muttrcColorBGI                 -> muttrcColor
+	muttrcColorBGI                 -> muttrcUnHighlightSpace
+	muttrcColorBGI                 -> muttrcVariable
+	muttrcColorContext             -> muttrcColorField
+	muttrcColorContext             -> muttrcUnHighlightSpace
+	muttrcColorContext             -> muttrcVariable
+	muttrcColorContextH            -> muttrcUnHighlightSpace
+	muttrcColorContextI            -> muttrcUnHighlightSpace
+	muttrcColorFG                  -> muttrcColor
+	muttrcColorFG                  -> muttrcUnHighlightSpace
+	muttrcColorFG                  -> muttrcVariable
+	muttrcColorFGH                 -> muttrcColor
+	muttrcColorFGH                 -> muttrcUnHighlightSpace
+	muttrcColorFGH                 -> muttrcVariable
+	muttrcColorFGI                 -> muttrcColor
+	muttrcColorFGI                 -> muttrcUnHighlightSpace
+	muttrcColorFGI                 -> muttrcVariable
+	muttrcColorLine                -> muttrcColorKeyword
+	muttrcColorLine                -> muttrcColorKeywordH
+	muttrcColorLine                -> muttrcColorKeywordI
+	muttrcColorLine                -> muttrcComment
+	muttrcColorLine                -> muttrcUnHighlightSpace
+	muttrcColorRXPat               -> muttrcRXString2
+	muttrcComposeFormatStr         -> muttrcComposeFormatEscapes
+	muttrcComposeFormatStr         -> muttrcFormatErrors
+	muttrcFolderFormatStr          -> muttrcFolderFormatConditionals
+	muttrcFolderFormatStr          -> muttrcFolderFormatEscapes
+	muttrcFolderFormatStr          -> muttrcFormatErrors
+	muttrcGroupDef                 -> muttrcGroupFlag
+	muttrcGroupDef                 -> muttrcUnHighlightSpace
+	muttrcGroupLine                -> muttrcAddrDef
+	muttrcGroupLine                -> muttrcComment
+	muttrcGroupLine                -> muttrcGroupDef
+	muttrcGroupLine                -> muttrcGroupKeyword
+	muttrcGroupLine                -> muttrcRXDef
+	muttrcGroupLine                -> muttrcUnHighlightSpace
+	muttrcIndexFormatStr           -> muttrcFormatErrors
+	muttrcIndexFormatStr           -> muttrcIndexFormatConditionals
+	muttrcIndexFormatStr           -> muttrcIndexFormatEscapes
+	muttrcIndexFormatStr           -> muttrcTimeEscapes
+	muttrcKey                      -> muttrcKeyName
+	muttrcKey                      -> muttrcKeySpecial
+	muttrcMacroBody                -> muttrcAction
+	muttrcMacroBody                -> muttrcCommand
+	muttrcMacroBody                -> muttrcEscape
+	muttrcMacroBody                -> muttrcNoSpam
+	muttrcMacroBody                -> muttrcReset
+	muttrcMacroBody                -> muttrcSet
+	muttrcMacroBody                -> muttrcSpam
+	muttrcMacroBody                -> muttrcToggle
+	muttrcMacroBody                -> muttrcUnset
+	muttrcMacroBody                -> muttrcVariable
+	muttrcMacroKey                 -> muttrcKey
+	muttrcMacroMenuList            -> muttrcMenu
+	muttrcMacroMenuList            -> muttrcMenuCommas
+	muttrcMenuList                 -> muttrcMenu
+	muttrcMixFormatStr             -> muttrcFormatErrors
+	muttrcMixFormatStr             -> muttrcMixFormatConditionals
+	muttrcMixFormatStr             -> muttrcMixFormatEscapes
+	muttrcMonoLine                 -> muttrcMono
+	muttrcNoSpamPattern            -> muttrcPattern
+	muttrcOptPattern               -> muttrcOptSimplePat
+	muttrcOptPattern               -> muttrcSimplePat
+	muttrcOptPattern               -> muttrcUnHighlightSpace
+	muttrcOptSimplePat             -> muttrcRXString
+	muttrcOptSimplePat             -> muttrcSimplePat
+	muttrcOptSimplePat             -> muttrcSimplePatMetas
+	muttrcPattern                  -> muttrcSimplePat
+	muttrcPattern                  -> muttrcSimplePatMetas
+	muttrcPattern                  -> muttrcUnHighlightSpace
+	muttrcPatternInner             -> muttrcSimplePat
+	muttrcPatternInner             -> muttrcSimplePatMetas
+	muttrcPatternInner             -> muttrcUnHighlightSpace
+	muttrcPGPCmdFormatStr          -> muttrcFormatErrors
+	muttrcPGPCmdFormatStr          -> muttrcPGPCmdFormatConditionals
+	muttrcPGPCmdFormatStr          -> muttrcPGPCmdFormatEscapes
+	muttrcPGPCmdFormatStr          -> muttrcVariable
+	muttrcPGPFormatStr             -> muttrcFormatErrors
+	muttrcPGPFormatStr             -> muttrcPGPFormatConditionals
+	muttrcPGPFormatStr             -> muttrcPGPFormatEscapes
+	muttrcPGPFormatStr             -> muttrcPGPTimeEscapes
+	muttrcPGPGetKeysFormatStr      -> muttrcFormatErrors
+	muttrcPGPGetKeysFormatStr      -> muttrcPGPGetKeysFormatEscapes
+	muttrcPGPTimeEscapes           -> muttrcStrftimeEscapes
+	muttrcQueryFormatStr           -> muttrcFormatErrors
+	muttrcQueryFormatStr           -> muttrcQueryFormatConditionals
+	muttrcQueryFormatStr           -> muttrcQueryFormatEscapes
+	muttrcRXHookString             -> muttrcRXString
+	muttrcRXPat                    -> muttrcRXChars
+	muttrcRXPat                    -> muttrcRXString
+	muttrcRXString                 -> muttrcRXChars
+	muttrcRXString2                -> muttrcRXChars
+	muttrcSetBoolAssignment        -> muttrcEscapedVariable
+	muttrcSetBoolAssignment        -> muttrcVariable
+	muttrcSetNumAssignment         -> muttrcEscapedVariable
+	muttrcSetNumAssignment         -> muttrcVariable
+	muttrcSetQuadAssignment        -> muttrcEscapedVariable
+	muttrcSetQuadAssignment        -> muttrcVariable
+	muttrcSetStrAssignment         -> muttrcEscapedVariable
+	muttrcSetStrAssignment         -> muttrcString
+	muttrcSetStrAssignment         -> muttrcVariable
+	muttrcShellString              -> muttrcCommand
+	muttrcShellString              -> muttrcVarBool
+	muttrcShellString              -> muttrcVarStr
+	muttrcSimplePat                -> muttrcShellString
+	muttrcSimplePat                -> muttrcVariable
+	muttrcSimplePatRXContainer     -> muttrcRXString
+	muttrcSmimeFormatStr           -> muttrcFormatErrors
+	muttrcSmimeFormatStr           -> muttrcSmimeFormatConditionals
+	muttrcSmimeFormatStr           -> muttrcSmimeFormatEscapes
+	muttrcSmimeFormatStr           -> muttrcVariable
+	muttrcSpamPattern              -> muttrcPattern
+	muttrcStatusFormatStr          -> muttrcFormatErrors
+	muttrcStatusFormatStr          -> muttrcStatusFormatConditionals
+	muttrcStatusFormatStr          -> muttrcStatusFormatEscapes
+	muttrcStrftimeFormatStr        -> muttrcFormatErrors
+	muttrcStrftimeFormatStr        -> muttrcStrftimeEscapes
+	muttrcString                   -> muttrcAction
+	muttrcString                   -> muttrcCommand
+	muttrcString                   -> muttrcEscape
+	muttrcString                   -> muttrcShellString
+	muttrcTimeEscapes              -> muttrcStrftimeEscapes
+	muttrcUnColorLine              -> muttrcComment
+	muttrcUnColorLine              -> muttrcUnColorKeyword
+	muttrcUnColorLine              -> muttrcUnHighlightSpace
+	muttrcUnColorPatterns          -> muttrcPattern
+	muttrcVariable                 -> muttrcVariableInner
+}

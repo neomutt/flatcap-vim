@@ -1,0 +1,241 @@
+muttrcAction                                contains=muttrcBadAction,muttrcFunction,muttrcKeyName
+muttrcAddrContent                           contains=muttrcEmail                                                                                                                   nextgroup=muttrcAddrContent
+muttrcAddrDef                                                                                                                                                                      nextgroup=muttrcAddrContent
+muttrcAliasComma                                                                                                                                                                   nextgroup=muttrcAliasEmail,muttrcAliasEncEmail,muttrcAliasNameNoParens,muttrcAliasENNL
+muttrcAliasEmail                            contains=muttrcEmail                                                                                                                   nextgroup=muttrcAliasName,muttrcAliasNameNL
+muttrcAliasEncEmail                         contains=muttrcEmail                                                                                                                   nextgroup=muttrcAliasComma
+muttrcAliasEncEmailNL                                                                                                                                                              nextgroup=muttrcAliasEncEmail,muttrcAliasEncEmailNL
+muttrcAliasENNL                                                                                                                                                                    nextgroup=muttrcAliasEmail,muttrcAliasEncEmail,muttrcAliasNameNoParens,muttrcAliasENNL
+muttrcAliasFormatEscapes
+muttrcAliasFormatStr                        contains=muttrcAliasFormatEscapes,muttrcFormatErrors                                                                                   nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcAliasGroupDef                         contains=muttrcGroupFlag                                                                                                               nextgroup=muttrcAliasGroupName,muttrcAliasGroupDefNL
+muttrcAliasGroupDefNL                                                                                                                                                              nextgroup=muttrcAliasGroupName,muttrcAliasGroupDefNL
+muttrcAliasGroupName                                                                                                                                                               nextgroup=muttrcAliasGroupDef,muttrcAliasKey,muttrcAliasNL
+muttrcAliasKey                                                                                                                                                                     nextgroup=muttrcAliasEmail,muttrcAliasEncEmail,muttrcAliasNameNoParens,muttrcAliasENNL
+muttrcAliasName    matchgroup=Type
+muttrcAliasNameNL                                                                                                                                                                  nextgroup=muttrcAliasName,muttrcAliasNameNL
+muttrcAliasNameNoParens                                                                                                                                                            nextgroup=muttrcAliasEncEmail,muttrcAliasEncEmailNL
+muttrcAliasNL                                                                                                                                                                      nextgroup=muttrcAliasGroupDef,muttrcAliasKey,muttrcAliasNL
+muttrcAlternateKeyword
+muttrcAlternatesLine                        contains=muttrcAlternateKeyword,muttrcGroupDef,muttrcRXPat,muttrcUnHighlightSpace,muttrcComment
+muttrcAsterisk
+muttrcAttachFormatConditionals                                                                                                                                                     nextgroup=muttrcFormatConditionals2
+muttrcAttachFormatEscapes
+muttrcAttachFormatStr                       contains=muttrcAttachFormatEscapes,muttrcAttachFormatConditionals,muttrcFormatErrors                                                   nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcAttachmentsFlag                                                                                                                                                              nextgroup=muttrcAttachmentsMimeType
+muttrcAttachmentsLine                                                                                                                                                              nextgroup=muttrcAttachmentsFlag
+muttrcAttachmentsMimeType                                                                                                                                                          nextgroup=muttrcAttachmentsMimeType
+muttrcBadAction                             contains=muttrcEmail
+muttrcBindFunction                          contains=muttrcFunction
+muttrcBindFunctionNL                                                                                                                                                               nextgroup=muttrcBindFunction,muttrcBindFunctionNL
+muttrcBindKey                               contains=muttrcKey                                                                                                                     nextgroup=muttrcBindFunction,muttrcBindFunctionNL
+muttrcBindKeyNL                                                                                                                                                                    nextgroup=muttrcBindKey,muttrcBindKeyNL
+muttrcBindMenuList                          contains=muttrcMenu,muttrcMenuCommas                                                                                                   nextgroup=muttrcBindKey,muttrcBindKeyNL
+muttrcBindMenuListNL                                                                                                                                                               nextgroup=muttrcBindMenuList,muttrcBindMenuListNL
+muttrcColor
+muttrcColorBG                               contains=muttrcColor,muttrcVariable,muttrcUnHighlightSpace                                                                             nextgroup=muttrcColorRXPat,muttrcColorRXNL
+muttrcColorBGH                              contains=muttrcColor,muttrcVariable,muttrcUnHighlightSpace                                                                             nextgroup=muttrcRXString,muttrcRXPatternNL
+muttrcColorBGI                              contains=muttrcColor,muttrcVariable,muttrcUnHighlightSpace                                                                             nextgroup=muttrcPattern,muttrcPatternNL
+muttrcColorBGNL                                                                                                                                                                    nextgroup=muttrcColorBG,muttrcColorBGNL
+muttrcColorBGNLH                                                                                                                                                                   nextgroup=muttrcColorBGH,muttrcColorBGNLH
+muttrcColorBGNLI                                                                                                                                                                   nextgroup=muttrcColorBGI,muttrcColorBGNLI
+muttrcColorContext                          contains=muttrcColorField,muttrcVariable,muttrcUnHighlightSpace                                                                        nextgroup=muttrcColorFG,muttrcColorFGNL
+muttrcColorContextH                         contains=muttrcUnHighlightSpace                                                                                                        nextgroup=muttrcColorFGH,muttrcColorFGNLH
+muttrcColorContextI                         contains=muttrcUnHighlightSpace                                                                                                        nextgroup=muttrcColorFGI,muttrcColorFGNLI
+muttrcColorFG                               contains=muttrcColor,muttrcVariable,muttrcUnHighlightSpace                                                                             nextgroup=muttrcColorBG,muttrcColorBGNL
+muttrcColorFGH                              contains=muttrcColor,muttrcVariable,muttrcUnHighlightSpace                                                                             nextgroup=muttrcColorBGH,muttrcColorBGNLH
+muttrcColorFGI                              contains=muttrcColor,muttrcVariable,muttrcUnHighlightSpace                                                                             nextgroup=muttrcColorBGI,muttrcColorBGNLI
+muttrcColorFGNL                                                                                                                                                                    nextgroup=muttrcColorFG,muttrcColorFGNL
+muttrcColorFGNLH                                                                                                                                                                   nextgroup=muttrcColorFGH,muttrcColorFGNLH
+muttrcColorFGNLI                                                                                                                                                                   nextgroup=muttrcColorFGI,muttrcColorFGNLI
+muttrcColorField
+muttrcColorKeyword                                                                                                                                                                 nextgroup=muttrcColorContext,muttrcColorNL
+muttrcColorKeywordH                                                                                                                                                                nextgroup=muttrcColorContextH,muttrcColorNLH
+muttrcColorKeywordI                                                                                                                                                                nextgroup=muttrcColorContextI,muttrcColorNLI
+muttrcColorLine                             contains=muttrcColorKeyword,muttrcComment,muttrcUnHighlightSpace
+muttrcColorLine                             contains=muttrcColorKeywordH,muttrcComment,muttrcUnHighlightSpace
+muttrcColorLine                             contains=muttrcColorKeywordI,muttrcComment,muttrcUnHighlightSpace
+muttrcColorMatchCount
+muttrcColorMatchCountNL                                                                                                                                                            nextgroup=muttrcColorMatchCount,muttrcColorMatchCountNL
+muttrcColorNL                                                                                                                                                                      nextgroup=muttrcColorContext,muttrcColorNL
+muttrcColorNLH                                                                                                                                                                     nextgroup=muttrcColorContextH,muttrcColorNLH
+muttrcColorNLI                                                                                                                                                                     nextgroup=muttrcColorContextI,muttrcColorNLI
+muttrcColorRXNL                                                                                                                                                                    nextgroup=muttrcColorRXPat,muttrcColorRXNL
+muttrcColorRXPat                            contains=muttrcRXString2                                                                                                               nextgroup=muttrcColorMatchCount,muttrcColorMatchCountNL
+muttrcCommand
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcAliasGroupDef,muttrcAliasKey,muttrcAliasNL
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcBindMenuList,muttrcBindMenuListNL
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcHooks
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcMacroMenuList,muttrcMacroMenuListNL
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcNoSpamPattern
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcRXString
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcSpamPattern
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcUnAliasKey,muttrcUnAliasNL
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcCommand                                                                                                                                                                      nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcComment
+muttrcComment                               contains=@Spell
+muttrcComposeFormatEscapes
+muttrcComposeFormatStr                      contains=muttrcComposeFormatEscapes,muttrcFormatErrors                                                                                 nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcEmail
+muttrcEscape
+muttrcEscapedVariable
+muttrcFolderFormatConditionals
+muttrcFolderFormatEscapes
+muttrcFolderFormatStr                       contains=muttrcFolderFormatEscapes,muttrcFolderFormatConditionals,muttrcFormatErrors                                                   nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcFormatConditionals2
+muttrcFormatErrors
+muttrcFunction
+muttrcGroupDef                              contains=muttrcGroupFlag,muttrcUnHighlightSpace
+muttrcGroupFlag
+muttrcGroupKeyword
+muttrcGroupLine                             contains=muttrcGroupKeyword,muttrcGroupDef,muttrcAddrDef,muttrcRXDef,muttrcUnHighlightSpace,muttrcComment
+muttrcHeader
+muttrcHooks
+muttrcIndexFormatConditionals                                                                                                                                                      nextgroup=muttrcFormatConditionals2
+muttrcIndexFormatEscapes
+muttrcIndexFormatStr                        contains=muttrcIndexFormatEscapes,muttrcIndexFormatConditionals,muttrcFormatErrors,muttrcTimeEscapes                                   nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcKey                                   contains=muttrcKeySpecial,muttrcKeyName
+muttrcKeyName
+muttrcKeySpecial
+muttrcListsKeyword                                                                                                                                                                 nextgroup=muttrcAsterisk,muttrcComment
+muttrcListsKeyword                                                                                                                                                                 nextgroup=muttrcGroupDef,muttrcComment
+muttrcMacroBody                             contains=muttrcEscape,muttrcSet,muttrcUnset,muttrcReset,muttrcToggle,muttrcCommand,muttrcAction                                        nextgroup=muttrcMacroDescr,muttrcMacroDescrNL
+muttrcMacroBody    matchgroup=Type          contains=muttrcEscape,muttrcSet,muttrcUnset,muttrcReset,muttrcToggle,muttrcSpam,muttrcNoSpam,muttrcCommand,muttrcAction,muttrcVariable nextgroup=muttrcMacroDescr,muttrcMacroDescrNL
+muttrcMacroBodyNL                                                                                                                                                                  nextgroup=muttrcMacroBody,muttrcMacroBodyNL
+muttrcMacroDescr
+muttrcMacroDescrNL                                                                                                                                                                 nextgroup=muttrcMacroDescr,muttrcMacroDescrNL
+muttrcMacroKey                              contains=muttrcKey                                                                                                                     nextgroup=muttrcMacroBody,muttrcMacroBodyNL
+muttrcMacroKeyNL                                                                                                                                                                   nextgroup=muttrcMacroKey,muttrcMacroKeyNL
+muttrcMacroMenuList                         contains=muttrcMenu,muttrcMenuCommas                                                                                                   nextgroup=muttrcMacroKey,muttrcMacroKeyNL
+muttrcMacroMenuListNL                                                                                                                                                              nextgroup=muttrcMacroMenuList,muttrcMacroMenuListNL
+muttrcMenu
+muttrcMenuCommas
+muttrcMenuList                              contains=muttrcMenu
+muttrcMixFormatConditionals
+muttrcMixFormatEscapes
+muttrcMixFormatStr                          contains=muttrcMixFormatEscapes,muttrcMixFormatConditionals,muttrcFormatErrors                                                         nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcMono                                                                                                                                                                         nextgroup=muttrcColorField
+muttrcMonoAttrib
+muttrcMonoLine                              contains=muttrcMono                                                                                                                    nextgroup=muttrcMonoAttrib
+muttrcNoSpamPattern                         contains=muttrcPattern
+muttrcOptPattern                                                                                                                                                                   nextgroup=muttrcString,muttrcStringNL
+muttrcOptPattern                            contains=muttrcSimplePat                                                                                                               nextgroup=muttrcString,muttrcStringNL
+muttrcOptPattern   matchgroup=Type          contains=muttrcOptSimplePat,muttrcUnHighlightSpace                                                                                     nextgroup=muttrcString,muttrcStringNL
+muttrcOptSimplePat                          contains=muttrcRXString
+muttrcOptSimplePat                          contains=muttrcSimplePat,muttrcSimplePatMetas
+muttrcPatHookNot                                                                                                                                                                   nextgroup=muttrcPattern
+muttrcPatHooks                                                                                                                                                                     nextgroup=muttrcPatHookNot,muttrcOptPattern
+muttrcPatHooks                                                                                                                                                                     nextgroup=muttrcPatHookNot,muttrcPattern
+muttrcPattern
+muttrcPattern                               contains=muttrcSimplePat
+muttrcPattern      matchgroup=Type          contains=muttrcSimplePat,muttrcUnHighlightSpace,muttrcSimplePatMetas
+muttrcPatternInner                          contains=muttrcSimplePat,muttrcUnHighlightSpace,muttrcSimplePatMetas
+muttrcPatternNL                                                                                                                                                                    nextgroup=muttrcPattern,muttrcPatternNL
+muttrcPGPCmdFormatConditionals                                                                                                                                                     nextgroup=muttrcFormatConditionals2
+muttrcPGPCmdFormatEscapes
+muttrcPGPCmdFormatStr                       contains=muttrcPGPCmdFormatEscapes,muttrcPGPCmdFormatConditionals,muttrcVariable,muttrcFormatErrors                                    nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcPGPFormatConditionals
+muttrcPGPFormatEscapes
+muttrcPGPFormatStr                          contains=muttrcPGPFormatEscapes,muttrcPGPFormatConditionals,muttrcFormatErrors,muttrcPGPTimeEscapes                                    nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcPGPGetKeysFormatEscapes
+muttrcPGPGetKeysFormatStr                   contains=muttrcPGPGetKeysFormatEscapes,muttrcFormatErrors                                                                              nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcPGPTimeEscapes                        contains=muttrcStrftimeEscapes
+muttrcQueryFormatConditionals                                                                                                                                                      nextgroup=muttrcFormatConditionals2
+muttrcQueryFormatEscapes
+muttrcQueryFormatStr                        contains=muttrcQueryFormatEscapes,muttrcQueryFormatConditionals,muttrcFormatErrors                                                     nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcRXChars
+muttrcRXDef                                                                                                                                                                        nextgroup=muttrcRXPat
+muttrcRXHookNot                                                                                                                                                                    nextgroup=muttrcRXHookString,muttrcRXHookStringNL
+muttrcRXHooks                                                                                                                                                                      nextgroup=muttrcRXHookNot,muttrcRXHookString,muttrcRXHookStringNL
+muttrcRXHookString                          contains=muttrcRXString                                                                                                                nextgroup=muttrcString,muttrcStringNL
+muttrcRXHookString matchgroup=muttrcRXChars contains=muttrcRXString                                                                                                                nextgroup=muttrcString,muttrcStringNL
+muttrcRXHookStringNL                                                                                                                                                               nextgroup=muttrcRXHookString,muttrcRXHookStringNL
+muttrcRXPat                                 contains=muttrcRXChars                                                                                                                 nextgroup=muttrcRXPat
+muttrcRXPat                                 contains=muttrcRXString                                                                                                                nextgroup=muttrcRXPat
+muttrcRXPatternNL                                                                                                                                                                  nextgroup=muttrcRXString,muttrcRXPatternNL
+muttrcRXString                              contains=muttrcRXChars
+muttrcRXString     matchgroup=muttrcRXChars contains=muttrcRXChars
+muttrcRXString2                             contains=muttrcRXChars
+muttrcSetBoolAssignment                                                                                                                                                            nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcSetBoolAssignment                     contains=muttrcVariable,muttrcEscapedVariable                                                                                          nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcSetNumAssignment                                                                                                                                                             nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcSetNumAssignment                      contains=muttrcVariable,muttrcEscapedVariable                                                                                          nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcSetQuadAssignment                                                                                                                                                            nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcSetQuadAssignment                     contains=muttrcVariable,muttrcEscapedVariable                                                                                          nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcSetStrAssignment                      contains=muttrcString                                                                                                                  nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcSetStrAssignment                      contains=muttrcVariable,muttrcEscapedVariable                                                                                          nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcShellString  matchgroup=muttrcEscape  contains=muttrcVarStr,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcCommand
+muttrcSimplePat
+muttrcSimplePat                                                                                                                                                                    nextgroup=muttrcSimplePatRXContainer
+muttrcSimplePat                                                                                                                                                                    nextgroup=muttrcSimplePatString
+muttrcSimplePat                             contains=muttrcShellString,muttrcVariable
+muttrcSimplePat                             contains=muttrcSimplePat
+muttrcSimplePatMetas
+muttrcSimplePatRXContainer                  contains=muttrcRXString
+muttrcSimplePatString
+muttrcSmimeFormatConditionals                                                                                                                                                      nextgroup=muttrcFormatConditionals2
+muttrcSmimeFormatEscapes
+muttrcSmimeFormatStr                        contains=muttrcSmimeFormatEscapes,muttrcSmimeFormatConditionals,muttrcVariable,muttrcFormatErrors                                      nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcSpamPattern                           contains=muttrcPattern                                                                                                                 nextgroup=muttrcString,muttrcStringNL
+muttrcSpecial
+muttrcStatusFormatConditionals                                                                                                                                                     nextgroup=muttrcFormatConditionals2
+muttrcStatusFormatEscapes
+muttrcStatusFormatStr                       contains=muttrcStatusFormatEscapes,muttrcStatusFormatConditionals,muttrcFormatErrors                                                   nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcStrftimeEscapes
+muttrcStrftimeFormatStr                     contains=muttrcStrftimeEscapes,muttrcFormatErrors                                                                                      nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcString                                contains=muttrcEscape,muttrcCommand,muttrcAction
+muttrcString                                contains=muttrcEscape,muttrcCommand,muttrcAction,muttrcShellString
+muttrcStringNL                                                                                                                                                                     nextgroup=muttrcString,muttrcStringNL
+muttrcSubscribeKeyword                                                                                                                                                             nextgroup=muttrcAsterisk,muttrcComment
+muttrcSubscribeKeyword                                                                                                                                                             nextgroup=muttrcGroupDef,muttrcComment
+muttrcTimeEscapes                           contains=muttrcStrftimeEscapes
+muttrcUnAliasKey                                                                                                                                                                   nextgroup=muttrcUnAliasKey,muttrcUnAliasNL
+muttrcUnAliasNL                                                                                                                                                                    nextgroup=muttrcUnAliasKey,muttrcUnAliasNL
+muttrcUnColorAll
+muttrcUnColorAPNL                                                                                                                                                                  nextgroup=muttrcUnColorPatterns,muttrcUnColorAll,muttrcUnColorAPNL
+muttrcUnColorIndex                                                                                                                                                                 nextgroup=muttrcUnColorPatterns,muttrcUnColorAll,muttrcUnColorAPNL
+muttrcUnColorIndexNL                                                                                                                                                               nextgroup=muttrcUnColorIndex,muttrcUnColorIndexNL
+muttrcUnColorKeyword                                                                                                                                                               nextgroup=muttrcUnColorIndex,muttrcUnColorIndexNL
+muttrcUnColorLine                           contains=muttrcUnColorKeyword,muttrcComment,muttrcUnHighlightSpace
+muttrcUnColorPatNL                                                                                                                                                                 nextgroup=muttrcUnColorPatterns,muttrcUnColorPatNL
+muttrcUnColorPatterns                       contains=muttrcPattern                                                                                                                 nextgroup=muttrcUnColorPatterns,muttrcUnColorPatNL
+muttrcUnHighlightSpace
+muttrcVarBool
+muttrcVarBool                                                                                                                                                                      nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcVarEqualsAliasFmt                                                                                                                                                            nextgroup=muttrcAliasFormatStr
+muttrcVarEqualsAttachFmt                                                                                                                                                           nextgroup=muttrcAttachFormatStr
+muttrcVarEqualsComposeFmt                                                                                                                                                          nextgroup=muttrcComposeFormatStr
+muttrcVarEqualsFolderFmt                                                                                                                                                           nextgroup=muttrcFolderFormatStr
+muttrcVarEqualsIdxFmt                                                                                                                                                              nextgroup=muttrcIndexFormatStr
+muttrcVarEqualsMixFmt                                                                                                                                                              nextgroup=muttrcMixFormatStr
+muttrcVarEqualsPGPCmdFmt                                                                                                                                                           nextgroup=muttrcPGPCmdFormatStr
+muttrcVarEqualsPGPFmt                                                                                                                                                              nextgroup=muttrcPGPFormatStr
+muttrcVarEqualsPGPGetKeysFmt                                                                                                                                                       nextgroup=muttrcPGPGetKeysFormatStr
+muttrcVarEqualsQueryFmt                                                                                                                                                            nextgroup=muttrcQueryFormatStr
+muttrcVarEqualsSmimeFmt                                                                                                                                                            nextgroup=muttrcSmimeFormatStr
+muttrcVarEqualsStatusFmt                                                                                                                                                           nextgroup=muttrcStatusFormatStr
+muttrcVarEqualsStrftimeFmt                                                                                                                                                         nextgroup=muttrcStrftimeFormatStr
+muttrcVariable                              contains=muttrcVariableInner
+muttrcVariableInner
+muttrcVarNum
+muttrcVarNum                                                                                                                                                                       nextgroup=muttrcSetNumAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcVarQuad
+muttrcVarQuad                                                                                                                                                                      nextgroup=muttrcSetQuadAssignment,muttrcVPrefix,mut,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcVarQuad                                                                                                                                                                      nextgroup=muttrcSetQuadAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcVarStr
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcSetStrAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsAliasFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsAttachFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsComposeFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsFolderFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsIdxFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsMixFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsPGPCmdFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsPGPFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsPGPGetKeysFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsQueryFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsSmimeFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsStatusFmt
+muttrcVarStr                                                                                                                                                                       nextgroup=muttrcVarEqualsStrftimeFmt
+muttrcVPrefix                                                                                                                                                                      nextgroup=muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr

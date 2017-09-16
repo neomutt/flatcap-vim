@@ -1,0 +1,3 @@
+
+syn match   muttrcColorField	contained "\<quoted\d\=\>"
+

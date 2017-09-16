@@ -1,0 +1,47 @@
+digraph pattern {
+	graph [
+		rankdir="LR"
+		nodesep="0.5"
+		ranksep="0.3"
+	];
+
+	node [
+		shape="Mrecord"
+		style="solid"
+		height="0.2"
+		penwidth="2.0"
+		color="blue"
+		fontcolor="black"
+		fontsize="18"
+	];
+
+	edge [
+		penwidth="1.5"
+		color="#000000"
+		arrowsize="1.0"
+	];
+
+	# OptPattern   [ label=<OptPattern ".*" '.*' ~(.*) ~X .> ]
+	# OptSimplePat [ label=<OptSimplePat /[~=%!(^].*/ /[^~=%!(^].*/> ]
+	
+	# Pattern
+	# RXHookString
+	# RXString
+	# ShellString
+	# SimplePat
+	# SimplePatMetas
+	# UnHighlightSpace
+	# Variable
+
+	OptSimplePat -> OptPattern
+	SimplePat -> OptPattern
+	UnHighlightSpace -> OptPattern
+	SimplePat -> Pattern
+	SimplePatMetas -> Pattern
+	UnHighlightSpace -> Pattern
+	RXString -> RXHookString
+	ShellString -> SimplePat
+	Variable -> SimplePat
+
+}
+

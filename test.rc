@@ -1,0 +1,17 @@
+
+set backspace
+
+set aeol
+set eol
+set eolb
+
+set write-fcc
+
+# comment with speling error
+#comment with speling error
+set backspace # comment with speling error
+
+set hello = "this is # not a comment"
+set hello = 'this is # not a comment'
+
+# vim: syn=muttrc

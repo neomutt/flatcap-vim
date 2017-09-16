@@ -1,0 +1,51 @@
+account-hook  regexp     command
+append-hook   pattern    shell-command
+charset-hook  alias      charset
+iconv-hook    charset    local-charset
+close-hook    pattern    shell-command
+open-hook     pattern    shell-command
+crypt-hook    regexp     keyid
+
+fcc-hook      [!]pattern mailbox
+fcc-save-hook [!]pattern mailbox
+folder-hook   [!]regexp  command
+mbox-hook     [!]regexp  mailbox
+message-hook  [!]pattern command
+save-hook     [!]pattern mailbox
+reply-hook    [!]pattern command
+send-hook     [!]pattern command
+send2-hook    [!]pattern command
+
+global
+	shutdown-hook COMMAND
+	startup-hook  COMMAND
+	timeout-hook  COMMAND
+
+pattern-command
+	message-hook !PATTERN COMMAND
+	reply-hook   !PATTERN COMMAND
+	send-hook    !PATTERN COMMAND
+	send2-hook   !PATTERN COMMAND
+
+pattern-mailbox
+	fcc-hook      !PATTERN MAILBOX
+	fcc-save-hook !PATTERN MAILBOX
+	save-hook     !PATTERN MAILBOX
+
+pattern-shell
+	append-hook PATTERN SHELL-COMMAND
+	close-hook  PATTERN SHELL-COMMAND
+	open-hook   PATTERN SHELL-COMMAND
+
+regex
+	folder-hook  !REGEX COMMAND
+	account-hook REGEX COMMAND
+	crypt-hook   REGEX KEYID
+	mbox-hook    !REGEX MAILBOX
+
+alias
+	charset-hook ALIAS CHARSET
+
+charset
+	iconv-hook CHARSET LOCAL-CHARSET
+

@@ -1,0 +1,319 @@
+digraph links {
+	graph [
+		rankdir="LR"
+		nodesep="0.5"
+		ranksep="0.3"
+	];
+
+	node [
+		shape="Mrecord"
+		style="filled"
+		height="0.2"
+		penwidth="2.0"
+		color="blue"
+		fontcolor="black"
+		fontsize="18"
+	];
+
+	edge [
+		penwidth="1.5"
+		color="#000000"
+		arrowsize="1.0"
+	];
+
+	muttrcAction                   [ label="Action"                       color="#ffff80" ]
+	muttrcAddrDef                  [ label="AddrDef"                      color="#ffff80" ]
+	muttrcAliasEncEmail            [ label="AliasEncEmail"                color="#ffff80" ]
+	muttrcAliasEncEmailNL          [ label="AliasEncEmailNL"              color="#ffff80" ]
+	muttrcAliasENNL                [ label="AliasENNL"                    color="#ffff80" ]
+	muttrcAliasFormatEscapes       [ label="AliasFormatEscapes"           color="#ffff80" ]
+	muttrcAliasFormatStr           [ label="AliasFormatStr"               color="#ffff80" ]
+	muttrcAliasGroupDefNL          [ label="AliasGroupDefNL"              color="#ffff80" ]
+	muttrcAliasGroupName           [ label="AliasGroupName"               color="#ffff80" ]
+	muttrcAliasKey                 [ label="AliasKey"                     color="#ffff80" ]
+	muttrcAliasNameNL              [ label="AliasNameNL"                  color="#ffff80" ]
+	muttrcAliasNL                  [ label="AliasNL"                      color="#ffff80" ]
+	muttrcAliasParens              [ label="AliasParens"                  color="#ffff80" ]
+	muttrcAlternateKeyword         [ label="AlternateKeyword"             color="#ffff80" ]
+	muttrcAlternatesLine           [ label="AlternatesLine"               color="#ffff80" ]
+	muttrcAttachFormatConditionals [ label="AttachFormatConditionals"     color="#ffff80" ]
+	muttrcAttachFormatEscapes      [ label="AttachFormatEscapes"          color="#ffff80" ]
+	muttrcAttachFormatStr          [ label="AttachFormatStr"              color="#ffff80" ]
+	muttrcAttachmentsFlag          [ label="AttachmentsFlag"              color="#ffff80" ]
+	muttrcAttachmentsLine          [ label="AttachmentsLine"              color="#ffff80" ]
+	muttrcAttachmentsMimeType      [ label="AttachmentsMimeType"          color="#ffff80" ]
+	muttrcBadAction                [ label="BadAction"                    color="#ffff80" ]
+	muttrcBindFunction             [ label="BindFunction"                 color="#ffff80" ]
+	muttrcBindFunctionNL           [ label="BindFunctionNL"               color="#ffff80" ]
+	muttrcBindKeyNL                [ label="BindKeyNL"                    color="#ffff80" ]
+	muttrcBindMenuList             [ label="BindMenuList"                 color="#ffff80" ]
+	muttrcBindMenuListNL           [ label="BindMenuListNL"               color="#ffff80" ]
+	muttrcColor                    [ label="Color"                        color="#ffff80" ]
+	muttrcColorBG                  [ label="ColorBG"                      color="#ffff80" ]
+	muttrcColorBGH                 [ label="ColorBGH"                     color="#ffff80" ]
+	muttrcColorBGI                 [ label="ColorBGI"                     color="#ffff80" ]
+	muttrcColorBGNL                [ label="ColorBGNL"                    color="#ffff80" ]
+	muttrcColorContext             [ label="ColorContext"                 color="#ffff80" ]
+	muttrcColorContextH            [ label="ColorContextH"                color="#ffff80" ]
+	muttrcColorContextI            [ label="ColorContextI"                color="#ffff80" ]
+	muttrcColorFG                  [ label="ColorFG"                      color="#ffff80" ]
+	muttrcColorFGH                 [ label="ColorFGH"                     color="#ffff80" ]
+	muttrcColorFGI                 [ label="ColorFGI"                     color="#ffff80" ]
+	muttrcColorFGNL                [ label="ColorFGNL"                    color="#ffff80" ]
+	muttrcColorField               [ label="ColorField"                   color="#ffff80" ]
+	muttrcColorKeyword             [ label="ColorKeyword"                 color="#ffff80" ]
+	muttrcColorKeywordH            [ label="ColorKeywordH"                color="#ffff80" ]
+	muttrcColorKeywordI            [ label="ColorKeywordI"                color="#ffff80" ]
+	muttrcColorLine                [ label="ColorLine"                    color="#ffff80" ]
+	muttrcColorMatchCountNL        [ label="ColorMatchCountNL"            color="#ffff80" ]
+	muttrcColorNL                  [ label="ColorNL"                      color="#ffff80" ]
+	muttrcColorRXNL                [ label="ColorRXNL"                    color="#ffff80" ]
+	muttrcCommand                  [ label="Command"                      color="#ffff80" ]
+	muttrcComment                  [ label="Comment"                      color="#ffff80" ]
+	muttrcComposeFormatEscapes     [ label="ComposeFormatEscapes"         color="#ffff80" ]
+	muttrcComposeFormatStr         [ label="ComposeFormatStr"             color="#ffff80" ]
+	muttrcEmail                    [ label="Email"                        color="#ffff80" ]
+	muttrcEscape                   [ label="Escape"                       color="#ffff80" ]
+	muttrcEscapedVariable          [ label="EscapedVariable"              color="#ffff80" ]
+	muttrcFolderFormatConditionals [ label="FolderFormatConditionals"     color="#ffff80" ]
+	muttrcFolderFormatEscapes      [ label="FolderFormatEscapes"          color="#ffff80" ]
+	muttrcFolderFormatStr          [ label="FolderFormatStr"              color="#ffff80" ]
+	muttrcFormatConditionals2      [ label="FormatConditionals2"          color="#ffff80" ]
+	muttrcFormatErrors             [ label="FormatErrors"                 color="#ffff80" ]
+	muttrcFunction                 [ label="Function"                     color="#ffff80" ]
+	muttrcGroupDef                 [ label="GroupDef"                     color="#ffff80" ]
+	muttrcGroupFlag                [ label="GroupFlag"                    color="#ffff80" ]
+	muttrcGroupKeyword             [ label="GroupKeyword"                 color="#ffff80" ]
+	muttrcGroupLine                [ label="GroupLine"                    color="#ffff80" ]
+	muttrcHeader                   [ label="Header"                       color="#ffff80" ]
+	muttrcHooks                    [ label="Hooks"                        color="#ffff80" ]
+	muttrcIndexFormatConditionals  [ label="IndexFormatConditionals"      color="#ffff80" ]
+	muttrcIndexFormatEscapes       [ label="IndexFormatEscapes"           color="#ffff80" ]
+	muttrcIndexFormatStr           [ label="IndexFormatStr"               color="#ffff80" ]
+	muttrcKey                      [ label="Key"                          color="#ffff80" ]
+	muttrcKeyName                  [ label="KeyName"                      color="#ffff80" ]
+	muttrcKeySpecial               [ label="KeySpecial"                   color="#ffff80" ]
+	muttrcListsKeyword             [ label="ListsKeyword"                 color="#ffff80" ]
+	muttrcListsLine                [ label="ListsLine"                    color="#ffff80" ]
+	muttrcMacroBodyNL              [ label="MacroBodyNL"                  color="#ffff80" ]
+	muttrcMacroDescr               [ label="MacroDescr"                   color="#ffff80" ]
+	muttrcMacroDescrNL             [ label="MacroDescrNL"                 color="#ffff80" ]
+	muttrcMacroKeyNL               [ label="MacroKeyNL"                   color="#ffff80" ]
+	muttrcMacroMenuListNL          [ label="MacroMenuListNL"              color="#ffff80" ]
+	muttrcMenu                     [ label="Menu"                         color="#ffff80" ]
+	muttrcMixFormatConditionals    [ label="MixFormatConditionals"        color="#ffff80" ]
+	muttrcMixFormatEscapes         [ label="MixFormatEscapes"             color="#ffff80" ]
+	muttrcMixFormatStr             [ label="MixFormatStr"                 color="#ffff80" ]
+	muttrcMono                     [ label="Mono"                         color="#ffff80" ]
+	muttrcMonoAttrib               [ label="MonoAttrib"                   color="#ffff80" ]
+	muttrcPatHookNot               [ label="PatHookNot"                   color="#ffff80" ]
+	muttrcPatHooks                 [ label="PatHooks"                     color="#ffff80" ]
+	muttrcPattern                  [ label="Pattern"                      color="#ffff80" ]
+	muttrcPatternNL                [ label="PatternNL"                    color="#ffff80" ]
+	muttrcPGPCmdFormatConditionals [ label="PGPCmdFormatConditionals"     color="#ffff80" ]
+	muttrcPGPCmdFormatEscapes      [ label="PGPCmdFormatEscapes"          color="#ffff80" ]
+	muttrcPGPCmdFormatStr          [ label="PGPCmdFormatStr"              color="#ffff80" ]
+	muttrcPGPFormatConditionals    [ label="PGPFormatConditionals"        color="#ffff80" ]
+	muttrcPGPFormatEscapes         [ label="PGPFormatEscapes"             color="#ffff80" ]
+	muttrcPGPFormatStr             [ label="PGPFormatStr"                 color="#ffff80" ]
+	muttrcPGPGetKeysFormatEscapes  [ label="PGPGetKeysFormatEscapes"      color="#ffff80" ]
+	muttrcPGPGetKeysFormatStr      [ label="PGPGetKeysFormatStr"          color="#ffff80" ]
+	muttrcPGPTimeEscapes           [ label="PGPTimeEscapes"               color="#ffff80" ]
+	muttrcRXChars                  [ label="RXChars"                      color="#ffff80" ]
+	muttrcRXDef                    [ label="RXDef"                        color="#ffff80" ]
+	muttrcRXHookNot                [ label="RXHookNot"                    color="#ffff80" ]
+	muttrcRXHooks                  [ label="RXHooks"                      color="#ffff80" ]
+	muttrcRXPat                    [ label="RXPat"                        color="#ffff80" ]
+	muttrcRXString                 [ label="RXString"                     color="#ffff80" ]
+	muttrcRXString2                [ label="RXString2"                    color="#ffff80" ]
+	muttrcSetBoolAssignment        [ label="SetBoolAssignment"            color="#ffff80" ]
+	muttrcSetNumAssignment         [ label="SetNumAssignment"             color="#ffff80" ]
+	muttrcSetQuadAssignment        [ label="SetQuadAssignment"            color="#ffff80" ]
+	muttrcSetStrAssignment         [ label="SetStrAssignment"             color="#ffff80" ]
+	muttrcShellString              [ label="ShellString"                  color="#ffff80" ]
+	muttrcSimplePat                [ label="SimplePat"                    color="#ffff80" ]
+	muttrcSimplePatMetas           [ label="SimplePatMetas"               color="#ffff80" ]
+	muttrcSimplePatString          [ label="SimplePatString"              color="#ffff80" ]
+	muttrcSmimeFormatConditionals  [ label="SmimeFormatConditionals"      color="#ffff80" ]
+	muttrcSmimeFormatEscapes       [ label="SmimeFormatEscapes"           color="#ffff80" ]
+	muttrcSmimeFormatStr           [ label="SmimeFormatStr"               color="#ffff80" ]
+	muttrcSpecial                  [ label="Special"                      color="#ffff80" ]
+	muttrcStatusFormatConditionals [ label="StatusFormatConditionals"     color="#ffff80" ]
+	muttrcStatusFormatEscapes      [ label="StatusFormatEscapes"          color="#ffff80" ]
+	muttrcStatusFormatStr          [ label="StatusFormatStr"              color="#ffff80" ]
+	muttrcStrftimeEscapes          [ label="StrftimeEscapes"              color="#ffff80" ]
+	muttrcStrftimeFormatStr        [ label="StrftimeFormatStr"            color="#ffff80" ]
+	muttrcString                   [ label="String"                       color="#ffff80" ]
+	muttrcStringNL                 [ label="StringNL"                     color="#ffff80" ]
+	muttrcSubscribeKeyword         [ label="SubscribeKeyword"             color="#ffff80" ]
+	muttrcSubscribeLine            [ label="SubscribeLine"                color="#ffff80" ]
+	muttrcTimeEscapes              [ label="TimeEscapes"                  color="#ffff80" ]
+	muttrcUnAliasKey               [ label="UnAliasKey"                   color="#ffff80" ]
+	muttrcUnAliasNL                [ label="UnAliasNL"                    color="#ffff80" ]
+	muttrcUnColorAPNL              [ label="UnColorAPNL"                  color="#ffff80" ]
+	muttrcUnColorIndex             [ label="UnColorIndex"                 color="#ffff80" ]
+	muttrcUnColorIndexNL           [ label="UnColorIndexNL"               color="#ffff80" ]
+	muttrcUnColorKeyword           [ label="UnColorKeyword"               color="#ffff80" ]
+	muttrcUnColorLine              [ label="UnColorLine"                  color="#ffff80" ]
+	muttrcUnColorPatNL             [ label="UnColorPatNL"                 color="#ffff80" ]
+	muttrcVarBool                  [ label="VarBool"                      color="#ffff80" ]
+	muttrcVariableInner            [ label="VariableInner"                color="#ffff80" ]
+	muttrcVarNum                   [ label="VarNum"                       color="#ffff80" ]
+	muttrcVarQuad                  [ label="VarQuad"                      color="#ffff80" ]
+	muttrcVarStr                   [ label="VarStr"                       color="#ffff80" ]
+
+	Boolean     [ label="Boolean"     color="#80ff80" ]
+	Comment     [ label="Comment"     color="#80ff80" ]
+	Error       [ label="Error"       color="#80ff80" ]
+	Identifier  [ label="Identifier"  color="#80ff80" ]
+	Keyword     [ label="Keyword"     color="#80ff80" ]
+	Macro       [ label="Macro"       color="#80ff80" ]
+	Number      [ label="Number"      color="#80ff80" ]
+	Special     [ label="Special"     color="#80ff80" ]
+	SpecialChar [ label="SpecialChar" color="#80ff80" ]
+	String      [ label="String"      color="#80ff80" ]
+	Type        [ label="Type"        color="#80ff80" ]
+
+	muttrcAction                   -> Macro
+	muttrcAddrDef                  -> muttrcGroupFlag
+	muttrcAliasEncEmail            -> Identifier
+	muttrcAliasEncEmailNL          -> SpecialChar
+	muttrcAliasENNL                -> SpecialChar
+	muttrcAliasFormatEscapes       -> muttrcEscape
+	muttrcAliasFormatStr           -> muttrcString
+	muttrcAliasGroupDefNL          -> SpecialChar
+	muttrcAliasGroupName           -> Macro
+	muttrcAliasKey                 -> Identifier
+	muttrcAliasNameNL              -> SpecialChar
+	muttrcAliasNL                  -> SpecialChar
+	muttrcAliasParens              -> Type
+	muttrcAlternateKeyword         -> muttrcCommand
+	muttrcAlternatesLine           -> Error
+	muttrcAttachFormatConditionals -> muttrcFormatConditionals2
+	muttrcAttachFormatEscapes      -> muttrcEscape
+	muttrcAttachFormatStr          -> muttrcString
+	muttrcAttachmentsFlag          -> Type
+	muttrcAttachmentsLine          -> muttrcCommand
+	muttrcAttachmentsMimeType      -> String
+	muttrcBadAction                -> Error
+	muttrcBindFunction             -> Error
+	muttrcBindFunctionNL           -> SpecialChar
+	muttrcBindKeyNL                -> SpecialChar
+	muttrcBindMenuList             -> Error
+	muttrcBindMenuListNL           -> SpecialChar
+	muttrcColor                    -> Type
+	muttrcColorBG                  -> Error
+	muttrcColorBGH                 -> Error
+	muttrcColorBGI                 -> Error
+	muttrcColorBGNL                -> SpecialChar
+	muttrcColorContext             -> Error
+	muttrcColorContextH            -> Identifier
+	muttrcColorContextI            -> Identifier
+	muttrcColorFG                  -> Error
+	muttrcColorFGH                 -> Error
+	muttrcColorFGI                 -> Error
+	muttrcColorFGNL                -> SpecialChar
+	muttrcColorField               -> Identifier
+	muttrcColorKeyword             -> muttrcCommand
+	muttrcColorKeywordH            -> muttrcColorKeyword
+	muttrcColorKeywordI            -> muttrcColorKeyword
+	muttrcColorLine                -> Error
+	muttrcColorMatchCountNL        -> SpecialChar
+	muttrcColorNL                  -> SpecialChar
+	muttrcColorRXNL                -> SpecialChar
+	muttrcCommand                  -> Keyword
+	muttrcComment                  -> Comment
+	muttrcComposeFormatEscapes     -> muttrcEscape
+	muttrcComposeFormatStr         -> muttrcString
+	muttrcEmail                    -> Special
+	muttrcEscape                   -> SpecialChar
+	muttrcEscapedVariable          -> String
+	muttrcFolderFormatConditionals -> muttrcFormatConditionals2
+	muttrcFolderFormatEscapes      -> muttrcEscape
+	muttrcFolderFormatStr          -> muttrcString
+	muttrcFormatConditionals2      -> Type
+	muttrcFormatErrors             -> Error
+	muttrcFunction                 -> Macro
+	muttrcGroupDef                 -> Macro
+	muttrcGroupFlag                -> Type
+	muttrcGroupKeyword             -> muttrcCommand
+	muttrcGroupLine                -> Error
+	muttrcHeader                   -> Type
+	muttrcHooks                    -> Type
+	muttrcIndexFormatConditionals  -> muttrcFormatConditionals2
+	muttrcIndexFormatEscapes       -> muttrcEscape
+	muttrcIndexFormatStr           -> muttrcString
+	muttrcKey                      -> Type
+	muttrcKeyName                  -> SpecialChar
+	muttrcKeySpecial               -> SpecialChar
+	muttrcListsKeyword             -> muttrcCommand
+	muttrcListsLine                -> Error
+	muttrcMacroBodyNL              -> SpecialChar
+	muttrcMacroDescr               -> String
+	muttrcMacroDescrNL             -> SpecialChar
+	muttrcMacroKeyNL               -> SpecialChar
+	muttrcMacroMenuListNL          -> SpecialChar
+	muttrcMenu                     -> Identifier
+	muttrcMixFormatConditionals    -> muttrcFormatConditionals2
+	muttrcMixFormatEscapes         -> muttrcEscape
+	muttrcMixFormatStr             -> muttrcString
+	muttrcMono                     -> muttrcCommand
+	muttrcMonoAttrib               -> muttrcColor
+	muttrcPatHookNot               -> Type
+	muttrcPatHooks                 -> muttrcCommand
+	muttrcPattern                  -> Error
+	muttrcPatternNL                -> SpecialChar
+	muttrcPGPCmdFormatConditionals -> muttrcFormatConditionals2
+	muttrcPGPCmdFormatEscapes      -> muttrcEscape
+	muttrcPGPCmdFormatStr          -> muttrcString
+	muttrcPGPFormatConditionals    -> muttrcFormatConditionals2
+	muttrcPGPFormatEscapes         -> muttrcEscape
+	muttrcPGPFormatStr             -> muttrcString
+	muttrcPGPGetKeysFormatEscapes  -> muttrcEscape
+	muttrcPGPGetKeysFormatStr      -> muttrcString
+	muttrcPGPTimeEscapes           -> muttrcEscape
+	muttrcRXChars                  -> SpecialChar
+	muttrcRXDef                    -> muttrcGroupFlag
+	muttrcRXHookNot                -> Type
+	muttrcRXHooks                  -> muttrcCommand
+	muttrcRXPat                    -> String
+	muttrcRXString                 -> String
+	muttrcRXString2                -> String
+	muttrcSetBoolAssignment        -> Boolean
+	muttrcSetNumAssignment         -> Number
+	muttrcSetQuadAssignment        -> Boolean
+	muttrcSetStrAssignment         -> String
+	muttrcShellString              -> muttrcEscape
+	muttrcSimplePat                -> Identifier
+	muttrcSimplePatMetas           -> Special
+	muttrcSimplePatString          -> Macro
+	muttrcSmimeFormatConditionals  -> muttrcFormatConditionals2
+	muttrcSmimeFormatEscapes       -> muttrcEscape
+	muttrcSmimeFormatStr           -> muttrcString
+	muttrcSpecial                  -> Special
+	muttrcStatusFormatConditionals -> muttrcFormatConditionals2
+	muttrcStatusFormatEscapes      -> muttrcEscape
+	muttrcStatusFormatStr          -> muttrcString
+	muttrcStrftimeEscapes          -> Type
+	muttrcStrftimeFormatStr        -> muttrcString
+	muttrcString                   -> String
+	muttrcStringNL                 -> SpecialChar
+	muttrcSubscribeKeyword         -> muttrcCommand
+	muttrcSubscribeLine            -> Error
+	muttrcTimeEscapes              -> muttrcEscape
+	muttrcUnAliasKey               -> Identifier
+	muttrcUnAliasNL                -> SpecialChar
+	muttrcUnColorAPNL              -> SpecialChar
+	muttrcUnColorIndex             -> Identifier
+	muttrcUnColorIndexNL           -> SpecialChar
+	muttrcUnColorKeyword           -> muttrcCommand
+	muttrcUnColorLine              -> Error
+	muttrcUnColorPatNL             -> SpecialChar
+	muttrcVarBool                  -> Identifier
+	muttrcVariableInner            -> Special
+	muttrcVarNum                   -> Identifier
+	muttrcVarQuad                  -> Identifier
+	muttrcVarStr                   -> Identifier
+
+	{ rank=same Boolean Comment Error Identifier Keyword Macro Number Special SpecialChar String Type }
+}

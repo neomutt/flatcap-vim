@@ -1,0 +1,53 @@
+syntax keyword muttrcCommand                                      QWQ
+syntax keyword muttrcSubscribeKeyword                             QWQ nextgroup=muttrcGroupDef,muttrcComment
+syntax keyword muttrcSubscribeKeyword                             QWQ nextgroup=muttrcAsterisk,muttrcComment
+
+syntax keyword muttrcAlternateKeyword         contained           QWQ
+syntax keyword muttrcAsterisk                 contained           QWQ
+syntax keyword muttrcColor                    contained           QWQ
+syntax keyword muttrcColorField               contained           QWQ
+syntax keyword muttrcFunction                 contained           QWQ
+syntax keyword muttrcGroupKeyword             contained           QWQ
+syntax keyword muttrcMenu                     contained           QWQ
+syntax keyword muttrcMonoAttrib               contained           QWQ
+
+syntax keyword muttrcColorField               contained skipwhite QWQ
+syntax keyword muttrcHooks                    contained skipwhite QWQ
+syntax keyword muttrcMono                     contained skipwhite QWQ nextgroup=muttrcColorField
+syntax keyword muttrcVarBool                  contained skipwhite QWQ nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool                  contained skipwhite QWQ nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarNum                   contained skipwhite QWQ nextgroup=muttrcSetNumAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarQuad                  contained skipwhite QWQ nextgroup=muttrcSetQuadAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarQuad                  contained skipwhite QWQ nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcSetStrAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsAliasFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsAttachFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsComposeFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsFolderFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsIdxFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsMixFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsPGPCmdFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsPGPFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsPGPGetKeysFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsQueryFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsSmimeFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsStatusFmt
+syntax keyword muttrcVarStr                   contained skipwhite QWQ nextgroup=muttrcVarEqualsStrftimeFmt
+
+syntax keyword muttrcListsKeyword                       skipwhite QWQ nextgroup=muttrcGroupDef,muttrcComment
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcAliasGroupDef,muttrcAliasKey,muttrcAliasNL
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcBindMenuList,muttrcBindMenuListNL
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcRXString
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcMacroMenuList,muttrcMacroMenuListNL
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcNoSpamPattern
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcSpamPattern
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcUnAliasKey,muttrcUnAliasNL
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcHooks
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcListsKeyword                       skipwhite QWQ nextgroup=muttrcAsterisk,muttrcComment
+syntax keyword muttrcCommand                            skipwhite QWQ nextgroup=muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcCommand                            skipwhite QWQ
+

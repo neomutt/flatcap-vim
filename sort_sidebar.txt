@@ -1,0 +1,10 @@
+alpha
+count
+desc
+flagged
+mailbox-order
+name
+new
+path
+unread
+unsorted

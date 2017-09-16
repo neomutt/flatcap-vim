@@ -1,0 +1,12 @@
+date
+date-received
+date-sent
+from
+label
+mailbox-order
+score
+size
+spam
+subject
+threads
+to
